@@ -1,6 +1,4 @@
 using LaunchDarkly.EventSource;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
 using System;
 using System.Diagnostics;
 
@@ -22,13 +20,15 @@ namespace Yobot
 			                          };
 
 			source.StartAsync();
+			/*
 
 			Host.CreateDefaultBuilder(args)
 			    .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>())
 			    .Build()
 			    .Run();
 
-			source.Close();
+			source.Close();*/
+			Console.ReadLine();
 		}
 	}
 }
